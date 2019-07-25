@@ -1,0 +1,8 @@
+# Source repository definition example.
+# See below for supported distribution and component values
+
+# Or use this line to install the latest Erlang 22.x package available
+deb https://dl.bintray.com/rabbitmq-erlang/debian xenial erlang
+
+# This repository provides RabbitMQ packages
+deb https://dl.bintray.com/rabbitmq/debian xenial main
