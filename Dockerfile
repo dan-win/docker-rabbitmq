@@ -29,7 +29,7 @@ RUN sudo apt-get update -y &&  sudo apt-get install -y erlang-base \
                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key \
                         erlang-runtime-tools erlang-snmp erlang-ssl \
                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
-ARG HOST
+ARG HOST=rabbitmq-ci
 RUN echo "${HOST}" > /etc/hostname
 RUN echo "127.0.0.1    ${HOST}" >> /etc/hosts
 RUN sudo apt-get install rabbitmq-server -y --fix-missing
